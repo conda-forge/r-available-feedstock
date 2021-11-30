@@ -1,4 +1,4 @@
-{% set version = '1.0.4' %}
+{% set version = "1.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/available_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/available/available_{{ version }}.tar.gz
-  sha256: 14318a5ed3ceab104aa92fc1b4047c0edce8c89e9644ca4b937bb1d840a8b8a1
+  sha256: c59f6c1c92bb846ed7eedbfae02da4854129626716966c2b68a3aaa95dfd9ed6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -63,12 +63,10 @@ test:
 about:
   home: https://github.com/ropenscilabs/available
   license: MIT
-  summary: Check if a given package name is available to use. It checks the name's validity.
-    Checks if it is used on 'GitHub', 'CRAN' and 'Bioconductor'. Checks for unintended
-    meanings by querying Urban Dictionary, 'Wiktionary' and Wikipedia.
+  summary: Check if a given package name is available to use. It checks the name's validity. Checks if it is used on 'GitHub', 'CRAN' and 'Bioconductor'. Checks for unintended meanings by querying Urban Dictionary, 'Wiktionary' and Wikipedia.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
