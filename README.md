@@ -1,11 +1,11 @@
-About r-available
-=================
+About r-available-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-available-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropenscilabs/available
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-available-feedstock/blob/main/LICENSE.txt)
 
 Summary: Check if a given package name is available to use. It checks the name's validity. Checks if it is used on 'GitHub', 'CRAN' and 'Bioconductor'. Checks for unintended meanings by querying Urban Dictionary, 'Wiktionary' and Wikipedia.
 
